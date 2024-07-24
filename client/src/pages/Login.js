@@ -33,7 +33,7 @@ function Login() {
     event.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/login",
+        "http://10.10.30.179:4000/login",
         {
           role:selectedRoleOption,
           domain:( selectedRoleOption != "hod" ? selectedDomainOption: 'hod'),
